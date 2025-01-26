@@ -21,7 +21,7 @@ function preload(){
   //loading font
   my_font = loadFont('Resources/L.C._Smith_5_typewriter.ttf');
   //loading bg
-  my_bg = loadImage('Resources/background_pic.jpg');
+  my_bg = loadImage('Resources/bg_2.jpg');
 
   
 
