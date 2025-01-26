@@ -61,7 +61,7 @@ function setup() {
   clear_button.mousePressed(
     () => {
       poem_array = [];
-      background(220);
+      background(my_bg);
       write_poem();
       cleared = true;
     }
