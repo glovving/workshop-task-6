@@ -41,39 +41,41 @@ I added a mousePressed() function to my submit button which calls my text procce
 For the first part of my text processing function I used the code that Leo showed us during the demonstration to create and array of words, then swap out the nouns with a random word, I then pushed the new string into an array.
 I decided to do this because I wanted to keep the basic structure of the user input and also some new sentences.
 
-(Add pic)
+(TEXT PROCCESS 1)
 
 Next I started implementing my markov chain function, which is where I had a lot of trouble.
 I didn't quite understand the documentation (https://rednoise.org/rita/#reference) so I didn't know that the generated markov element was an array rather than a single string so I was pushing a long array into my poem_array, which only printed on the screen sometimes.
 
-(Add pic)
+<img src="Documentation/markov_function_stringtype.png" alt="Notes" width="300">
 
 I was stuck on this for a while until I tested if the returned element was an array using the Array.isArray(elem.) function.
 
 I also had troubl trying to set the length of each sentence the markov functon generated, I was under the impression that entering a value into the .generate() function would set a specific word count but after many tests and attempted fixes I found that whatever number I inputted it generated a much longer sentence.
 
-(Add pic string leng test) 
+<img src="Documentation/string_lengths_test.png" alt="Notes" width="300">
+
 To test I printed every length throughout my for loop going through the markov array.
 
 As an easy fix I just used an if statement to catch any long strings and sliced them before pushing them onto my poem array.
 
-(Add pic)
+(SAVE SLICE)
 
 ### Printing Poem
 
 For printing my poem I used the same code that Leo showed, my write_poem function is called inside the draw function and uses a for loop to print every string inside my poem_array.
-(add pic)
+
+<img src="Documentation/printing_poem_func.png" alt="Notes" width="300">
 
 ### Adding Extra functionality and Final website
 After my basic website was completed I added instructional text instructions on how to use the website.
 
-(Add pic)
+<img src="Documentation/extra_text.png" alt="Notes" width="300"><img src="Documentation/extra_text_onscreen.png" alt="Notes" width="300">
 
 And an extra 'clear' button for resetting the canvas, upon pressing the clear button the poem_array is set to an empty array and the background is redrawn to clear the text.
 
 Here is an example of what a final poem looks like and what happens when the screen is cleared.
 
-(Add pic of function and cleared screen)
+<img src="Documentation/final_input.png" alt="Notes" width="300"><img src="Documentation/final_result.png" alt="Notes" width="300"><img src="Documentation/final_cleared.png" alt="Notes" width="300">
 
 ## Reflection and How I would expand this sketch
 
