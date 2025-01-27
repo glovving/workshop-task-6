@@ -7,26 +7,32 @@ Link to completed website -> (https://glovving.github.io/workshop-task-6/)
 - Make a new repository for your p5.js project on your GitHub account, publish your sketch as a webpage, and include a README file in your repository with a URL to the webpage along with documentation of your work.
 
 ## Notes and Planning
-Here are some notes I took during the workshop tutorial.
+Here are some notes I took during the workshop tutorial (right), before I began coding my website I also did a simple sketch in my notebook of what I wanted it to do and look like (left).
 
-(Add pic)
+<img src="Documentation/note1.jpg" alt="Notes" width="300"><img src="Documentation/plan_sketch.jpg" alt="Notes" width="300">
 
-Before I began coding my website I also did a simple sketch in my notebook of what I wanted it to do and look like.
 I planned to use the code that Leo showed us to tokenise then swap out the nouns (RiTa.tokenize(), RiTa.isNoun()) of an inputted sentence with a random word, then use the RiTa.markov function to generate a number of new lines.
 
-(Add pic Leos code and rita markov)
+<img src="Documentation/leos_code.png" alt="Notes" width="300"><img src="Documentation/Ri_markov_page.png" alt="Notes" width="300">
 
 ## Building website
 ### Testing font
 I started with downloading and testing some fonts from the internet, I used a website called dafont (https://www.dafont.com/) to source my fonts.
+
+<img src="Documentation/dafont.png" alt="Notes" width="300"><img src="Documentation/hammer_keys_page.png" alt="Notes" width="300"><img src="Documentation/lc_smith_page.png" alt="Notes" width="300">
+
+
 I then loaded them on my p5.js vscode environment and tried them out, the first one I tried - the h'ammer keys font had an error where each line would print twice, once in capital letters and then in block letters, I did't want this so I chose to use the L.C. Smith 5 font.
 
-(Add pics of website and testing)
+<img src="Documentation/testing_font.png" alt="Notes" width="300">
+
+The hammer keys problem ^
+
 
 ### User Input
 To recieve user input I created a text input box and submit button, once the user inputs text and presses the submit button the input box is cleared and the inputted string is stored in as a string.
 
-(Add pic)
+<img src="Documentation/userinput_and_pressed.png" alt="Notes" width="300">
 
 I added a mousePressed() function to my submit button which calls my text proccessing function.
 
