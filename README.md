@@ -41,7 +41,7 @@ I added a mousePressed() function to my submit button which calls my text procce
 For the first part of my text processing function I used the code that Leo showed us during the demonstration to create and array of words, then swap out the nouns with a random word, I then pushed the new string into an array.
 I decided to do this because I wanted to keep the basic structure of the user input and also some new sentences.
 
-(TEXT PROCCESS 1)
+<img src="Documentation/text_proccess_1.png" alt="Notes" width="300">
 
 Next I started implementing my markov chain function, which is where I had a lot of trouble.
 I didn't quite understand the documentation (https://rednoise.org/rita/#reference) so I didn't know that the generated markov element was an array rather than a single string so I was pushing a long array into my poem_array, which only printed on the screen sometimes.
@@ -58,7 +58,7 @@ To test I printed every length throughout my for loop going through the markov a
 
 As an easy fix I just used an if statement to catch any long strings and sliced them before pushing them onto my poem array.
 
-(SAVE SLICE)
+<img src="Documentation/save_slice.png" alt="Notes" width="300">
 
 ### Printing Poem
 
